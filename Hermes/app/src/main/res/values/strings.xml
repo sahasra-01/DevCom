@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Hermes</string>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#035A52</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="login">Login</string>
+    <string name="new_here">New here ?</string>
+    <string name="or_login_using">or Login using</string>
+    <string name="phone">Phone</string>
+    <string name="login_image">Login Image</string>
+    <string name="email">Email…</string>
+    <string name="password">Password…</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="new_email">New Email</string>
+    <string name="new_password">New Password</string>
+
+</resources>
