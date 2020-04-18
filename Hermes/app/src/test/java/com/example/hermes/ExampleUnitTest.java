@@ -1,4 +1,4 @@
-package com.example.hermes.com;
+package com.example.hermes;
 
 import org.junit.Test;
 
