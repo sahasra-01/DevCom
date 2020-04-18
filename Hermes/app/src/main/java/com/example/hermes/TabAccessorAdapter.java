@@ -8,7 +8,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 public class TabAccessorAdapter extends FragmentPagerAdapter {
 
-    public TabAccessorAdapter(FragmentManager fm) {
+    TabAccessorAdapter(FragmentManager fm) {
         super(fm);
     }
 
@@ -17,18 +17,16 @@ public class TabAccessorAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                ChatsFragment chatsFragment = new ChatsFragment();
-                return chatsFragment;
+                return new ChatsFragment();
 
             case 1:
-                GroupsFragment groupsFragment = new GroupsFragment();
-                return groupsFragment;
+                return new GroupsFragment();
 
             case 2:
-                ContactsFragment contactsFragment = new ContactsFragment();
-                return contactsFragment;
+                return new ContactsFragment();
 
             default:
+                //noinspection ConstantConditions
                 return null;
         }
 

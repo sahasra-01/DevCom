@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">Hermes</string>
 
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
@@ -21,5 +21,8 @@
     <string name="already_have_an_account">Already have an account</string>
     <string name="new_email">New Email</string>
     <string name="new_password">New Password</string>
+    <string name="chats">Chats</string>
+    <string name="contacts">contacts</string>
+    <string name="groups">Groups</string>
 
 </resources>

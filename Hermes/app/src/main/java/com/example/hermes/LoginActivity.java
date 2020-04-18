@@ -14,9 +14,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginActivity extends AppCompatActivity {
 
     private FirebaseUser currentUser;
-    private Button LoginButton, PhoneLoginButton;
-    private EditText UserEmail, UserPassword;
-    private TextView NeedNewAccountLink, ForgotPasswordLink;
+    private TextView NeedNewAccountLink;
 
     public LoginActivity(FirebaseUser currentUser) {
         this.currentUser = currentUser;
@@ -25,11 +23,9 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
-        setContentView(R.layout.activity_login);
+//        setContentView(R.layout.activity_login);
         super.onCreate(savedInstanceState);
-      /*  TextView tv = new TextView(this);
-        tv.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT,ViewGroup.LayoutParams.FILL_PARENT));
-        setContentView(tv);*/
+        setContentView(R.layout.activity_login);
 
       InitializeFields();
 
@@ -42,12 +38,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void InitializeFields() {
-        LoginButton = (Button) findViewById(R.id.login_button);
-        PhoneLoginButton = (Button) findViewById(R.id.phone_login_button);
-        UserEmail = (EditText) findViewById(R.id.login_email);
-        UserPassword = (EditText) findViewById(R.id.login_password);
-        NeedNewAccountLink = (TextView) findViewById(R.id.new_here);
-        ForgotPasswordLink = (TextView) findViewById(R.id.forgot_password_link);
+        Button loginButton = findViewById(R.id.login_button);
+        Button phoneLoginButton = findViewById(R.id.phone_login_button);
+        EditText userEmail = findViewById(R.id.login_email);
+        EditText userPassword = findViewById(R.id.login_password);
+        NeedNewAccountLink = findViewById(R.id.new_here);
+        TextView forgotPasswordLink = findViewById(R.id.forgot_password_link);
     }
 
     @Override
